@@ -1,0 +1,85 @@
+.wishlist-container{
+    margin: auto;
+    margin-top: 50px;
+    width: 60%;
+    padding: 10px;
+}
+
+
+
+
+.wish-item-input{
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #d8d8d8;
+    outline: none;
+    width: 80%;
+    background: transparent;
+    margin-bottom: 25px;
+}
+
+.add-item-btn{
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: black;
+    color: white;
+    width: 20%;
+}
+
+
+.wishlist-form {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px grey;
+  }
+ 
+  .todo-input {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background: white;
+    border: 1px solid grey;
+    width: 50%;
+  }
+  .todo-button {
+    border: 1px solid grey;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    border: none;
+    background: black;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width:10%;
+  }
+  form button:hover {
+    background: #ff6f47;
+    color: white;
+  }
+
+  .item-container {
+    margin: 0.5rem;
+    background: rgb(233, 233, 233);
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+    padding:10px;
+  }
+
+  .delete-item-btn{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  }

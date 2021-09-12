@@ -1,0 +1,59 @@
+
+  .archived-card {
+    display: flex;
+    background: white;
+    /* border-radius: 1rem; */
+    /* box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212); */
+    align-content: center;
+    padding: 25px;
+    margin: 25px;
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    margin-left:2rem;
+  }
+
+.user-item-trade-image{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .user-item-condition{
+      font-size: .9rem;
+  }
+
+  .mark-as-traded-btn{
+      margin-top:5px;
+      background: none;
+      color: inherit;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      float: left;
+      display: flex;
+  }
+
+  .mark-as-traded-btn:hover{
+      color:rgb(161, 26, 26);
+  }
+
+.traded{
+    color: red; 
+}
+
+.remove-item-btn{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 100px;
+}

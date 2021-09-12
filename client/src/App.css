@@ -1,0 +1,54 @@
+.input{
+  width: 350px;
+  margin-bottom:20px;
+  border:none;
+  border-bottom: 1px solid grey;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+
+.login-container{
+  text-align: center;
+}
+
+.login-btn{
+  width: 350px;
+  height: 30px;
+}
+
+
+ *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.post-archived{
+  display: flex;
+}
+
+.sign-up-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+.logout-btn{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  width:100%;
+}
+

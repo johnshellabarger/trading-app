@@ -1,0 +1,113 @@
+.add-item-container{
+    text-align: center;
+    display:grid;
+}
+
+.uploaded-item-photo{
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+}
+  
+  .addItem-input{
+    width: 30%;
+    margin-bottom:20px;
+    border:none;
+    border-bottom: 1px solid grey;
+  }
+
+
+  .username-label{
+    display:block;
+    
+}
+
+.container .wrapper{
+    position: relative;
+    height: 300px;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+    width: 300px;
+    border: 2px dashed grey;
+    margin-bottom: 10px;
+}
+
+.wrapper .image{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper .image img {
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .icon{
+    font-size: 100px;
+    margin-top: 25%;
+}
+
+.wrapper .text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.wrapper .cancel-btn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.wrapper .file-name{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(rgb(24, 24, 24),rgb(173, 173, 173) )
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.add-photo-btn{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.post-item-btn{
+    width: 30%;
+    background-color: black;
+    color: white;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    border-radius: 5px;
+}

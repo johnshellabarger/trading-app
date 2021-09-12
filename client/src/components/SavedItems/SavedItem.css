@@ -1,0 +1,65 @@
+.saved-glass {
+    width: 60%;
+    /* background: rgb(240, 240, 240); */
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    margin: auto;
+    width: 60%;
+    padding: 25px;
+    margin-top:50px;
+  }
+
+  .card {
+    display: flex;
+    background: white;
+    align-content: center;
+    padding: 25px;
+    margin: 25px;
+    border-bottom: 2px solid lightgrey;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    margin-left:2rem;
+  }
+
+.user-item-trade-image{
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .user-item-condition{
+      font-size: .9rem;
+  }
+
+  .mark-as-traded-btn{
+      margin-top:5px;
+      background: none;
+      color: inherit;
+      border: none;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      float: left;
+      display: flex;
+  }
+
+  .mark-as-traded-btn:hover{
+      color:rgb(161, 26, 26);
+  }
+
+  .remove-btn{
+      cursor: pointer;
+      font-size: 1rem;
+  }
+
+  .remove-btn:hover{
+    color: rgb(161, 26, 26);;
+}
+
+.see-details-btn{
+    font-size: 1rem;
+}

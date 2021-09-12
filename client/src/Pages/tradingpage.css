@@ -1,0 +1,30 @@
+.trading-nav-link {
+    text-decoration: none;
+    color:black;
+} 
+
+.trading-links-container{
+    margin: auto;
+    left: 50%;
+    padding: 5px;
+    display: flex;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 1; 
+    transform: translate(-50%, -50%);
+    display:flex;
+    white-space: nowrap;
+
+}
+
+.camera-icon{
+    height: 15px;
+}
+
+.post-item-link{
+    margin-right: 250px;
+}
+
+.archived-link{
+    margin-left: 250px;
+}
