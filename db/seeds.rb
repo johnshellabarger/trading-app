@@ -9,8 +9,6 @@ User.destroy_all
 puts "seeding"
 
 
-
-
 john = User.create(email: "johnwilliamshellabarger@gmail.com", name: "John S", zipcode: 80204, password: "password")
 arleth = User.create(email: "arleth@gmail.com", name: "Arleth O", zipcode: 80204, password: "password")
 evan = User.create(email: "evan@gmail.com", name: "Evan M", zipcode: 80204, password: "password")
@@ -61,6 +59,18 @@ item28 = Item.create(photo: "https://images.offerup.com/hIRtTKIx8pcfrB48QENziHjk
 item29 = Item.create(photo: "https://images.offerup.com/a_9LEVOqxz5COow80SyS9HxqXCI=/1442x1922/638e/638ec8cce3e64e42b2dff29786f36c64.jpg", title: "Board game bundle!", description: "All the pieces are accounted for! Great games and perfect foe any Star Wars lover!", category:"Games", condition: "Used", user_id: emery.id, sold: false)
 item30 = Item.create(photo: "https://images.offerup.com/P2smUaQaImG5R5c9Ln_d5RtI170=/1440x1920/f9ca/f9cabbbda4384509916afc720941979d.jpg", title: "Hiking poles", description: "Set of poles, they've seen some miles!", category:"Clothing", condition: "Used", user_id: evan.id, sold: false)
 item31 = Item.create(photo: "https://images.offerup.com/1ZVcMGlKVzj6woh14MfWAa78xGk=/1440x1920/574b/574b192c42e34e3bb8a6e66bc958eaf5.jpg", title: "Martha Stewart Christmas Tree Ornaments 98ct red & Gold", description: "Martha Stewart Christmas Tree Ornament 98ct", category:"Clothing", condition: "New", user_id: kyle.id, sold: false)
+
+
+
+item32 = Item.create(photo: "https://images.offerup.com/ame7T5tdsGeytTFiD9oUgtLZ6do=/1440x1920/d723/d7233c1c838149b9bf26ae1050c27f15.jpg", title: "Black Small Foldable Stool/Chair", description: "Normal used, pretty solid and yet light 1.5 years old black small foldable stool/chair", category:"Home", condition: "Reconditioned", user_id: joey.id, sold: false)
+item33 = Item.create(photo: "https://images.offerup.com/ZqPllA3pHnVzAHA7rMIBuGuoidA=/1440x1920/755f/755f534c54744b0cbc12e64fac284a6d.jpg", title: "One Of A Kind Carhart Beanie", description: "One of a kind Carhart Beanie, you cannot find these anywhere. Search online if you’d like and you’d be lucky to find maybe even just one. But super dope and a must have for any Carhart lover.", category:"Electronics & Media", condition: "New", user_id: joey.id, sold: false)
+item34 = Item.create(photo: "https://images.offerup.com/YQygaLABWmMDpM_N0l5z4mfPZ5E=/750x1000/2d0a/2d0a30993ed243fa94f3b6f2d2d84af7.jpg", title: "Jordan 1" , description: "Box included and extra laces included, Worn once", category:"Home", condition: "Used", user_id: aaron.id, sold: false)
+item35 = Item.create(photo: "ht", title: "Vintage GAP Vest", description: "Size Medium, excellent condition", category:"Clothing", condition: "Used", user_id: aaron.id, sold: false)
+item36 = Item.create(photo: "h", title: "Cactus Style Pillows", description: "Cactus style pillows for bed or couch decorations", category:"Home", condition: "Used", user_id: jeff.id, sold: false)
+item37 = Item.create(photo: "h", title: "Boppy", description: "Baby boppy! Great condition!", category:"Clothing", condition: "Used", user_id: arleth.id, sold: false)
+item38 = Item.create(photo: "ht", title: "Board game bundle!", description: "All the pieces are accounted for! Great games and perfect foe any Star Wars lover!", category:"Games", condition: "Used", user_id: emery.id, sold: false)
+item39 = Item.create(photo: "ht", title: "Hiking poles", description: "Set of poles, they've seen some miles!", category:"Clothing", condition: "Used", user_id: evan.id, sold: false)
+item40 = Item.create(photo: "ht", title: "Martha Stewart Christmas Tree Ornaments 98ct red & Gold", description: "Martha Stewart Christmas Tree Ornament 98ct", category:"Clothing", condition: "New", user_id: kyle.id, sold: false)
 
 
 puts "done seeding"
