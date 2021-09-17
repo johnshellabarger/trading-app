@@ -6,7 +6,6 @@ const SavedPage = () => {
 
     return (
         <div>
-            <h1>Saved items</h1>
             <SavedList />
         </div>
     )

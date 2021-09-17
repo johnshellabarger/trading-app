@@ -78,7 +78,6 @@ const AdditemForm = () => {
     
     return (
         <>
-        <h1>Post an Item</h1>
         <div className='add-item-container'>
         
         <div className='container'>

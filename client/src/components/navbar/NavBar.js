@@ -13,12 +13,13 @@ const NavBar = ({ name, setUser }) => {
         
         <nav className="navBar">
         <div className='icon-bar'>
+        <img className='nav-logo' src='https://lh3.googleusercontent.com/pw/AM-JKLVatT3dGVr-R4X8-1SOvurVwg-M1C2BTQVp-ol5PvYCZZdFDbScjqaeGl2zL5RYcb1MO9OA2e2W12G1qHwiXp67loyktYl2cleceOD5UjjbTL6qx22XkOdjMO1USN-E9JZr8gg9r71j3cyo2_198Juw=s834-no?authuser=0' />
           <ul className="nav-links">
 
           <li className="nav-li">
-                <NavLink activeClassName="nav-link-active" className="nav-link one" to="/">
-                <div className='icon'><FaHatCowboy className='fa'/></div>
-                Home
+                <NavLink activeClassName="nav-link-active" className="nav-link one" to="/"  exact={true}>
+                <div className='icon'><FaHatCowboy className='fa cowboy'/></div>
+                <div className='name'>Home</div>
                 </NavLink>
               </li>
 

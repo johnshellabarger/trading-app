@@ -46,25 +46,26 @@
     border: 1px solid grey;
     width: 50%;
   }
+
   .todo-button {
     border: 1px solid grey;
     padding: 0.5rem;
     font-size: 1.3rem;
     border: none;
-    background: black;
+    background:#b84444;
     color: #ffffff;
     cursor: pointer;
     transition: all 0.3s ease;
     width:10%;
   }
-  form button:hover {
-    background: #ff6f47;
+
+.todo-button:hover {
+    background:#792f2f;
     color: white;
   }
 
   .item-container {
     margin: 0.5rem;
-    background: rgb(233, 233, 233);
     font-size: 1.5rem;
     color: black;
     display: flex;
@@ -83,3 +84,29 @@
 	cursor: pointer;
 	outline: inherit;
   }
+
+  .delete-item-btn:hover{
+    color:#b84444;
+  }
+
+/* .to-do{
+  margin-bottom:25px;
+} */
+
+.todo-row {
+  background: rgb(207, 207, 207);
+  border-radius: 5px;
+  width: 90%;
+}
+/* 
+.todo-row:nth-child(4n + 1) {
+  background: rgb(235, 235, 235);
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: rgb(185, 185, 185);
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: rgb(148, 148, 148);
+} */

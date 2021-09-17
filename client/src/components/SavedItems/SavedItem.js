@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import { FaAngleRight } from "react-icons/fa";
+import { FaAngleRight, FaHeart } from "react-icons/fa";
 import './SavedItem.css'
+
 
 
 const SavedItem = ({ item, savedItems, setSavedItems }) => {
@@ -18,8 +19,10 @@ const SavedItem = ({ item, savedItems, setSavedItems }) => {
         <div className='card'>
             <img className='user-item-trade-image' alt={item.title} src={item.photo}/>
             <div className='card-info'>
+                
                 <h1>{item.title}</h1>
-                <h1 className='user-item-condition'>{item.condition}</h1>
+        
+                <FaHeart className='saved-heart-icon'/>
                 <NavLink className='details-nav-link' to={`/DetailPage/${item.item_id}`}>
                     <p className='see-details-btn'>See Details <FaAngleRight className='detail-icon'/></p>
                 </NavLink> 

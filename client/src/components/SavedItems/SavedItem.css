@@ -48,7 +48,7 @@
   }
 
   .mark-as-traded-btn:hover{
-      color:rgb(161, 26, 26);
+      color: #b84444;
   }
 
   .remove-btn{
@@ -57,9 +57,15 @@
   }
 
   .remove-btn:hover{
-    color: rgb(161, 26, 26);;
+    color: #b84444;
 }
 
 .see-details-btn{
     font-size: 1rem;
+    display: flex;
+}
+
+.saved-heart-icon{
+  color: #b84444;
+  margin-bottom:5px;
 }

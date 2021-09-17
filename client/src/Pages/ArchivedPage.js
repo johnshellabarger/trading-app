@@ -14,7 +14,6 @@ const ArchivedPage = () => {
     
     return (
         <div>
-            <h1>Archived</h1>
             <div className='glass'>
                 {tradedItems.length > 0 ? 
                     (tradedItems.map(item => {

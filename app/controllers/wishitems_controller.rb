@@ -8,8 +8,9 @@ class WishitemsController < ApplicationController
         render json: items 
     end
 
-    def user_wishlist
-       wishlist = Wishlist.where(user_id: [params_id])
+    def show
+       wishlist = Wishlist.where(user_id: params[user_id])
+       render json: wishlist, status: :ok 
     end
 
     def create
@@ -27,6 +28,6 @@ class WishitemsController < ApplicationController
 private
 
     def wishitems_params
-        params.permit(:item_name)
+        params.permit(:item_name, :user_id)
     end
 end

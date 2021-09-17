@@ -3,12 +3,12 @@ import "./detailpage.css"
 import { FaRegHeart, FaHeart, FaRegListAlt } from "react-icons/fa";
 import { useState, useEffect } from 'react'
 import Avatar from 'react-avatar';
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import Modal from "react-modal";
 
 
-const DetailPage = ({ usersSavedItems }) => {
-
+const DetailPage = ({ user, usersSavedItems }) => {
+    const history = useHistory()
     const { id } = useParams()
     const [itemDetails, setItemDetails] = useState({})
     const [isSaved, setIsSaved] = useState(false)
@@ -19,12 +19,10 @@ const DetailPage = ({ usersSavedItems }) => {
         fetch(`/items/${id}`)
         .then(resp => resp.json())
         .then(data => {
-            console.log(usersSavedItems)
             setItemDetails(data)
             usersSavedItems.map((item) => {
-                console.log('saved item id:', item.item_id, 'compared id:', data.id)
                 if (item.item_id === data.id){
-                    return setIsSaved(true)
+                    setIsSaved(true)
                 }
             })
         })
@@ -57,16 +55,23 @@ const DetailPage = ({ usersSavedItems }) => {
         })
     }
 
-        // usersSavedItems.map((item) => {
-        //     if (item.item_id === id){
-        //         setIsSaved(true)
-        //     }
-        // })
-
+    function handleMessageUser(userId){
+        const newDM = {
+            user_a_id: user.id,
+            user_b_id: userId,
+        }
+        fetch('/direct_messages', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(newDM)
+        })
+        history.push("/InboxPage")
+    }
 
     return (
         <>
-            <h1>Details</h1>
             <div className='details-container'>
                 <div className='detail-image-container'>
                     <img className='details-image' alt={itemDetails.title} src={itemDetails.photo}/>
@@ -87,7 +92,7 @@ const DetailPage = ({ usersSavedItems }) => {
                     </div>
                         
 
-                    <button className='message-user-btn'>Message User</button>
+                    <button onClick={() => handleMessageUser(itemDetails.user.id)} className='message-user-btn'>Message User</button>
                     <div className='save-wish-list-container'>
                         { isSaved ? (<span className='saved-btn'><FaHeart /> Saved </span>) 
                         : (<span className='save-btn' onClick={handleSaveItem}><FaRegHeart /> Save </span>) }
@@ -101,6 +106,7 @@ const DetailPage = ({ usersSavedItems }) => {
                             overlayClassName="Overlay"
                             ariaHideApp={false}
                         >
+                            
                             
                             <button onClick={() => closeModal()}>close</button>
                         </Modal>

@@ -37,14 +37,15 @@
       outline: inherit;
       float: left;
       display: flex;
+      
   }
 
   .mark-as-traded-btn:hover{
-      color:rgb(161, 26, 26);
+    color: #b84444;
   }
 
 .traded{
-    color: red; 
+  color: #b84444;
 }
 
 .remove-item-btn{

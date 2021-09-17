@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_09_185625) do
+ActiveRecord::Schema.define(version: 2021_09_13_190646) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "direct_messages", force: :cascade do |t|
+    t.bigint "user_a_id"
+    t.bigint "user_b_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_a_id"], name: "index_direct_messages_on_user_a_id"
+    t.index ["user_b_id"], name: "index_direct_messages_on_user_b_id"
+  end
 
   create_table "items", force: :cascade do |t|
     t.boolean "sold"
@@ -32,6 +41,10 @@ ActiveRecord::Schema.define(version: 2021_09_09_185625) do
     t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "direct_message_id"
+    t.bigint "user_id"
+    t.index ["direct_message_id"], name: "index_messages_on_direct_message_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
   end
 
   create_table "saved_items", force: :cascade do |t|
@@ -64,6 +77,8 @@ ActiveRecord::Schema.define(version: 2021_09_09_185625) do
   end
 
   add_foreign_key "items", "users"
+  add_foreign_key "messages", "direct_messages"
+  add_foreign_key "messages", "users"
   add_foreign_key "saved_items", "items"
   add_foreign_key "saved_items", "users"
   add_foreign_key "wishitems", "users"

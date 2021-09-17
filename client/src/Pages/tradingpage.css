@@ -3,6 +3,12 @@
     color:black;
 } 
 
+.trading-nav-link:hover {
+    text-decoration: none;
+    color: #b84444;
+} 
+
+
 .trading-links-container{
     margin: auto;
     left: 50%;
@@ -11,7 +17,7 @@
     margin-top: 50px;
     position: absolute;
     z-index: 1; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     display:flex;
     white-space: nowrap;
 
@@ -19,6 +25,7 @@
 
 .camera-icon{
     height: 15px;
+    margin-right: 5px;
 }
 
 .post-item-link{

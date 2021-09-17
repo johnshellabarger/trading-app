@@ -18,7 +18,7 @@ const TradingList = ({setSelectedItem, searchInput}) => {
         <div className='trade-item-wrapper'>
             {items.length > 0 ? 
                     (items.map(item => {
-                        if (item.sold === false && item.title.toLowerCase().startsWith(searchInput.toLowerCase())) {
+                        if (item.sold === false && item.title.toLowerCase().includes(searchInput?.toLowerCase())) {
                             return (
                                 <TradeItem item={item}/>
                             )

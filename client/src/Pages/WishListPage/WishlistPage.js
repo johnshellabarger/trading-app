@@ -17,7 +17,6 @@ const WishlistPage = () => {
 
     return (
         <>
-        <h1>Home | Wishlist</h1>
         <div className='wishlist-container'>
             <WishItemform items={items} setItems={setItems}/>
             <WishList items={items} setItems={setItems}/>

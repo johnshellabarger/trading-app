@@ -4,13 +4,12 @@ import { FaCamera} from "react-icons/fa"
 import { NavLink } from "react-router-dom"
 import './tradingpage.css'
 
-const links = "Home < Trading"
 
 const TradingPage = () => {
 
     return (
         <div>
-            <h1>{links}</h1>
+
             <div className='trading-links-container'>
                 <h3 className='post-item-link'>
                     <NavLink to="/PostPage" className='trading-nav-link'>

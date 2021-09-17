@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
+
+
 
 .navBar{
     display: flex;
-    height: 10vh;
+    height: 12vh;
     /* background-color: white; */
     border-bottom: 1px solid grey; 
     box-shadow: 0 6px 10px -2px rgba(240, 240, 240, 0.9);
-    background-image: url("https://images.pexels.com/photos/1568757/pexels-photo-1568757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-logo{
+    height: 60px;
+    width: 60px;
+    margin-left:50px;
 }
 
 ul {
@@ -16,7 +25,7 @@ ul .nav-li {
     list-style: none;
     text-align: center;
     display: block;
-    border-right: 2px solid rgb(255, 255, 255);
+    border-right: 1px solid rgb(7, 7, 7);
 }
 
 ul .nav-li:last-child{
@@ -27,33 +36,30 @@ ul .nav-li a {
     text-decoration: none;
     padding: 0 20px;
     display: block;
-    color: white;
+    color: #747474;
 }
 
 ul .nav-li a .icon {
     width: 17px;
-    /* height: 17px; */
+    height: 17px;
     max-height: 17px;
     text-align: center;
     margin: 0 auto 10px;
 }
 
 ul .nav-li a .icon .fa {
-    width:100%;
-    height: 100%;
-    line-height: 20px;
-    font-size: 34px;
     transition: 0.5s;
-    color: white;
+    color: #747474;
     white-space: nowrap;
 }
 
+
 ul .nav-li a:hover .icon .fa {
-    transform: translateY(-10%)
+    transform: translateY(-25%)
 }
 
-ul .nav-li a:hover .icon .name {
-    color:rgb(29, 121, 11);
+ul .nav-li a:hover  .name {
+    color: #b84444;
 }
 
 .nav-links {
@@ -78,7 +84,7 @@ ul .nav-li a:hover .icon .name {
 } 
 
 .sb-avatar{
-    margin-left:10px;
+    margin-left:25px;
 }
 
 .nav-li{
@@ -94,13 +100,12 @@ ul .nav-li a:hover .icon .name {
 } 
 
 
-/* .nav-link-active .name {
-    color: #9e2323;
-}  */
+.nav-link-active .name {
+       color: #b84444;
+} 
 
 .nav-link-active .icon .fa {
     color: red;
-    
 } 
 
 .dropbtn {
@@ -140,4 +145,8 @@ ul .nav-li a:hover .icon .name {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.name{
+    font-family: 'Work Sans', sans-serif;
+}
 

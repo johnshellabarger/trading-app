@@ -25,6 +25,7 @@ input:focus, textarea:focus, select:focus{
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 .post-archived{

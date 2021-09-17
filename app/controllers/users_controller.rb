@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     
   
     def show
-      render json: @current_user
+      render json: @current_user, include: [:chats]
     end
 
     private

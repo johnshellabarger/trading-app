@@ -1,6 +1,8 @@
 .add-item-container{
     text-align: center;
     display:grid;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .uploaded-item-photo{
@@ -101,13 +103,28 @@ input[type="file"] {
     margin-bottom: 20px;
 }
 
+.add-photo-btn:hover{
+    color: #b84444;
+}
+
+.custom-file-upload:hover{
+    color: #b84444;
+}
+
+
 .post-item-btn{
     width: 30%;
-    background-color: black;
+    background-color: #b84444;
+    border: none;
+    height:40px;
     color: white;
 	padding: 0;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
     border-radius: 5px;
+}
+
+.post-item-btn:hover{
+    background:#792f2f;
 }
