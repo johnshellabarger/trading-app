@@ -78,10 +78,12 @@ To get a local copy up and running follow these steps.
    ```sh
    json-server --watch db.json
    ```
-4. Start the App
+4. Start the App!
+
    ```sh
    npm start
    ```
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -95,11 +97,17 @@ Sign up and create an Account to login.
 
 ### Browse items 
 Upon login, you will be greeted with all the items other users have posted. Click on the thumbnail to view more details about these items.  
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/22285810/135159049-03e21b03-651d-49e4-b749-db0a8c5f99fa.gif"/>
+</p>
 
 
 
 ### Upload items
-Click on "Upload" to upload a photo of an item you want to get rid of. Select the photo and click add photo. Fill out the details for the item and click "Post" 
+Click on "Post" to upload a photo of an item you want to get rid of. Click "SELECT A PHOTO" and then click "ADD PHOTO". Fill out the details for the item and click "POST" 
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/22285810/135159740-e75cd1c5-4cb1-4a76-adf9-71c30fb8e356.gif"/>
+</p>
 
 
 
