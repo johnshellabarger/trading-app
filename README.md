@@ -1,4 +1,7 @@
 <p align="center">
+  <p align='center'>
+  <img width='35%' src="https://user-images.githubusercontent.com/22285810/135171000-af97eb2e-26d3-45f7-aba5-ce4fa57e0861.jpg"/>
+  </p>
   <h3 align="center">The Trading Post</h3>
   <p align="center">
     A sustainable marketplace where users can trade unwanted items with other users!
@@ -6,32 +9,6 @@
     <br />
   </p>
 </p>
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
 
 
 
@@ -74,14 +51,14 @@ To get a local copy up and running follow these steps.
    ```sh
    npm install
    ```
-3. Start the JSON server
+3. Start the Rails server
    ```sh
-   json-server --watch db.json
+   Rails s 
    ```
 4. Start the App!
 
    ```sh
-   npm start
+   npm start --prefix client
    ```
 
 
@@ -96,11 +73,10 @@ Sign up and create an Account to login.
 
 
 ### Browse items 
-Upon login, you will be greeted with all the items other users have posted. Click on the thumbnail to view more details about these items.  
+Upon login, you will be greeted with all the items other users have posted. Click on the thumbnail to view more details about these items. Save an item to view later. 
 <p align='center'>
   <img width='75%' src="https://user-images.githubusercontent.com/22285810/135159049-03e21b03-651d-49e4-b749-db0a8c5f99fa.gif"/>
 </p>
-
 
 
 ### Upload items
@@ -110,13 +86,18 @@ Click on "Post" to upload a photo of an item you want to get rid of. Click "SELE
 </p>
 
 
-
 ### Message users about their items
 If you are viewing an items detail, there is a option to message a user. Once this button is clicked, it will initiate a conversation with the other user. You can then message them about their item and see if they are willing to trade. 
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/22285810/135170808-31783109-1019-476e-98df-913c679278ea.gif"/>
+</p>
 
 
 ### Update your wishlist
 Add or delete items to your wishlist so other users can see what items you are looking for! 
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/22285810/135170761-5841e951-a214-4fe8-95ee-648e73fa8e57.gif"/>
+</p>
 
 
 <!-- CONTACT -->
