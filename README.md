@@ -1,5 +1,4 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/82396393/134072508-0ee3b4b5-a8be-4a0e-b229-763a7990b208.png" alt="Logo">
   <h3 align="center">The Trading Post</h3>
   <p align="center">
     A sustainable marketplace where users can trade unwanted items with other users!
@@ -39,9 +38,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-The trading post is a 
-
 Features of The Trading Post:
 * Search for items users have posted and view additonal information about items
 * Post unwanted items that other users can view
@@ -51,8 +47,10 @@ Features of The Trading Post:
 
 ### Built With
 
-* [React.js]
-* [Ruby.rb]
+* React
+* Ruby on Rails
+* Websockets
+* Firebase Storage 
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -89,34 +87,28 @@ To get a local copy up and running follow these steps.
 ## Usage
 
 ### Landing Page
-Sign up and create an Account to login. 
-
-
+Sign up and create an Account to login.
+<p align='center'>
+  <img width='75%' src="https://user-images.githubusercontent.com/22285810/135146023-7807133f-be60-40e1-92d2-5543395a7724.gif"/>
+</p>
 
 
 ### Browse items 
 Upon login, you will be greeted with all the items other users have posted. Click on the thumbnail to view more details about these items.  
+
+
 
 ### Upload items
 Click on "Upload" to upload a photo of an item you want to get rid of. Select the photo and click add photo. Fill out the details for the item and click "Post" 
 
 
 
-
-
-
-
 ### Message users about their items
 If you are viewing an items detail, there is a option to message a user. Once this button is clicked, it will initiate a conversation with the other user. You can then message them about their item and see if they are willing to trade. 
-<p align='center'>
-  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134084166-05684232-6e1f-4c80-80f6-13385c5bb3a2.gif"/>
-</p>
+
 
 ### Update your wishlist
 Add or delete items to your wishlist so other users can see what items you are looking for! 
-<p align='center'>
-  <img width='75%' src="https://user-images.githubusercontent.com/82396393/134085171-2c84436a-12e7-4135-a2fa-1678952608df.gif"/>
-</p>
 
 
 <!-- CONTACT -->
